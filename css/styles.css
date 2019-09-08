@@ -1,8 +1,16 @@
 h1
 {
     text-align: center;
-    font-family: Ubuntu;
-    margin-bottom: 0px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+    margin: 0px;
+    margin-top: 2px;
+    border: dot-dot-dash 1px darkorchid;
+}
+
+h2
+{
+    font-family: 'Great Vibes', cursive;
 }
 
 body{
@@ -16,5 +24,15 @@ body{
 table
 {
     border: dotted 5px darkmagenta;
-    margin: 10% auto 0 auto;
+    margin: 0 auto 0 auto;
 }
+
+.credits
+{
+    display: inline;
+    margin: 0px;
+    font-family: 'Chilanka', cursive;
+    size: 1em;
+    text-align: center;
+}
+
