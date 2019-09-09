@@ -16,6 +16,7 @@ function makeMove(id) {
             player = 'o';
         else
             player = 'x';
+        document.getElementById("vez").innerText = player;
     }
     else
     {
