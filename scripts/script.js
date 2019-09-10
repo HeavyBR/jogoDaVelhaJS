@@ -2,14 +2,15 @@ var player = 'x';
 var numberOfMoves = 0;
 function makeMove(id) {
     let src = checkSource(id);
-    numberOfMoves++;
     if(src === "blank.png")
     {
         document.getElementById(id).src = "images/" + player + ".png";
         console.log("Trocando imagem para: " + player + ".png");
+        numberOfMoves++;
         if(checkStatus())
         {
             alert("O jogador " + player + " venceu a partida!");
+            numberOfMoves = 0;
             location.reload(); // Reinicia a página
         }
         if(player === 'x')
@@ -25,6 +26,7 @@ function makeMove(id) {
     if (numberOfMoves >= 9)
     {
         alert("A partida terminou empatada!");
+        numberOfMoves = 0;
         location.reload();
     }
 }
